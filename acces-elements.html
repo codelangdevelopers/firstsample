@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Javascript-accesingElements</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    
+</head>
+
+<body>
+	<p id="text">Hello World!</p>
+	<button id="mybutton">Change text</button>
+	<p id="secondParagraph">Javascript is ...</p>
+	<button id="mybutton2">Append text</button>
+	<p id="thirdParagraph"></p>
+	<button id="mybutton3">Get text</button>
+	<p id="forthParagraph">This is some text</p>
+	<button id="mybutton4">Style text</button>
+	<script type="text/javascript">
+		document.getElementById("mybutton").onclick=function(){
+		document.getElementById("text").innerHTML="Hello Asif!";}
+		document.getElementById("mybutton2").onclick=function(){
+		document.getElementById("secondParagraph").innerHTML= "I think "+document.getElementById("secondParagraph").innerHTML+"awesome!!";}
+		document.getElementById("mybutton3").onclick=function(){
+	    document.getElementById("thirdParagraph").innerHTML="Hello I am a student!";}
+		document.getElementById("mybutton4").onclick=function(){
+	    document.getElementById("forthParagraph").style.display="none";}
+	</script>
+	
+	
+</body>
+</html>
+

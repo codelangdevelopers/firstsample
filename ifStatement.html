@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Arrays</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+</head>
+
+<body>
+	<input type="text" placeholder="Enter the magic word!" id="textInput">
+	<button id="magic">Check</button>
+	<p id="checker"></p>
+   
+	<script type="text/javascript">
+		var x="paakhi";
+		document.getElementById("magic").onclick=function(){
+		var textEntered = "";
+		textEntered = document.getElementById("textInput").value;
+		
+		
+		if(textEntered==x)
+		{
+		alert("Congratulations!! You are right!");}
+		else{alert("Try again!!");
+		}
+		}
+		
+	</script>
+	
+	
+</body>
+</html>
+
